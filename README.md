@@ -2,6 +2,30 @@
 
 Repositório de códigos e exercícios da aula 17 do curso NExT 2023.1
 
+## Instruções para iniciar o projeto:
+
+1. Criar um projeto JAVA chamado ProjetoNext2023.
+2. Descompactar o arquivo projetomodelo.zip em uma pasta do sistema de arquivos.
+3. Localizar, na pasta onde o zip foi descompactado, o diretório SRC.
+4. Selecionar tal diretório e copiar (CTRL-C).
+5. Na IDE, selecionar o projeto criado ProjetoNext2023.
+6. Colar (CTRL-V) o diretório SRC copiado.
+7. Os passos 3-6 correspondem a uma forma simplificada de colocar as classes de
+referência em um projeto. Existem outros caminhos, que vão igualmente resultar na
+estrutura de pacotes e nas classes dentro de um projeto JAVA típico.
+8. Baixar no diretório do projeto o arquivo PersistenciaObjetos.jar.
+9. Incluir no projeto a dependência de PersistenciaObjetos.jar. No Eclipse, seguir os
+seguintes passos:
+
+    * Selecionar o projeto, clicar no botão direito, que dá acesso ao menu de contexto.
+    
+    * Clicar na opção Properties.
+    * Abre-se uma janela com algumas opções. Clicar em Java Build Path e selecionar a aba Libraries.
+    * No espaço “JARs and class folders on the build path”, selecionar Classpath.
+    * No lado esquerdo, clicar em Add External JARs...
+    * Abre-se uma janela para seleção de arquivos. Selecionar o arquivo
+PersistenciaObjetos.jar.
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
