@@ -2,7 +2,7 @@
 
 Repositório de códigos e exercícios da aula 17 do curso NExT 2023.1
 
-## Instruções para iniciar o projeto:
+## Instruções para iniciar o projeto via class room:
 
 1. Criar um projeto JAVA chamado ProjetoNext2023.
 2. Descompactar o arquivo projetomodelo.zip em uma pasta do sistema de arquivos.
@@ -14,17 +14,24 @@ Repositório de códigos e exercícios da aula 17 do curso NExT 2023.1
 referência em um projeto. Existem outros caminhos, que vão igualmente resultar na
 estrutura de pacotes e nas classes dentro de um projeto JAVA típico.
 8. Baixar no diretório do projeto o arquivo PersistenciaObjetos.jar.
-9. Incluir no projeto a dependência de PersistenciaObjetos.jar. No Eclipse, seguir os
-seguintes passos:
-
-    * Selecionar o projeto, clicar no botão direito, que dá acesso ao menu de contexto.
+9. Incluir no projeto a dependência de PersistenciaObjetos.jar. 
     
+    No Eclipse, seguir os seguintes passos:
+    * Selecionar o projeto, clicar no botão direito, que dá acesso ao menu de contexto.
     * Clicar na opção Properties.
     * Abre-se uma janela com algumas opções. Clicar em Java Build Path e selecionar a aba Libraries.
     * No espaço “JARs and class folders on the build path”, selecionar Classpath.
     * No lado esquerdo, clicar em Add External JARs...
-    * Abre-se uma janela para seleção de arquivos. Selecionar o arquivo
-PersistenciaObjetos.jar.
+    * Abre-se uma janela para seleção de arquivos. Selecionar o arquivo PersistenciaObjetos.jar.
+
+    No vscode:
+        * Copie o arquivo PersistenciaObjetos.jar para a pasta lib, e pronto.
+
+## Instruções para iniciar o projeto via github:
+
+1. faça o clone deste repositorio com o seguinte código:
+    * ```git clone https://github.com/NExT-2023-1/aula17.git```
+2. pronto, pode usar.
 
 ## Getting Started
 
