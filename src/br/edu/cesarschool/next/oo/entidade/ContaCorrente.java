@@ -3,6 +3,7 @@ package br.edu.cesarschool.next.oo.entidade;
 import java.io.Serializable;
 public class ContaCorrente implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private String numero;
     private double saldo;
     private String nomeCorrentista;

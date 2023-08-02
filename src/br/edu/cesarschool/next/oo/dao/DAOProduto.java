@@ -6,7 +6,7 @@ import br.edu.cesarschool.next.oo.entidade.Produto;
 import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 
 public class DAOProduto {
-	private CadastroObjetos cadastro = new CadastroObjetos();
+	private CadastroObjetos cadastro = new CadastroObjetos(Produto.class);
 	public boolean incluir(Produto prod) {
 		Produto prodBusca = buscar(prod.getCodigo());
 		if (prodBusca != null) {
@@ -26,7 +26,7 @@ public class DAOProduto {
 		}		
 	}
 	public Produto buscar(String codigo) {
-		return (Produto)cadastro.buscar(Produto.class, codigo);
+		return (Produto)cadastro.buscar(codigo);
 	}
 	public Produto[] buscarTodos() {
 		Serializable[] rets = cadastro.buscarTodos(Produto.class);

@@ -2,14 +2,13 @@ package br.edu.cesarschool.next.oo.dao;
 
 import java.io.Serializable;
 import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
-import br.edu.cesarschool.next.oo.entidade.Produto;
 import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 
 import javax.tools.JavaCompiler;
 
 public class DAOContaCorrente {
 
-    private CadastroObjetos cadastro = new CadastroObjetos();
+    private CadastroObjetos cadastro = new CadastroObjetos(ContaCorrente.class);
 
     public boolean incluir(ContaCorrente conta) {
         ContaCorrente contaBusca = buscar(conta.getNumero());
@@ -21,9 +20,9 @@ public class DAOContaCorrente {
         }
     }
 
-    public ContaCorrente buscar(String codigo) {
+    public ContaCorrente buscar(String numero) {
 
-        return (ContaCorrente) cadastro.buscar(ContaCorrente.class, codigo);
+        return (ContaCorrente) cadastro.buscar(numero);
     }
 
     public boolean alterar(ContaCorrente conta) {
