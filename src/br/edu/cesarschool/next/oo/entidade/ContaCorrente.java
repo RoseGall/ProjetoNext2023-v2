@@ -46,4 +46,10 @@ public class ContaCorrente implements Serializable {
 
         saldo -= valor;
     }
+
+    @Override
+    public String toString() {
+
+        return "\nNúmero da conta: " + numero + "\nSaldo atual: " + saldo + "\nNome do correntista: " + nomeCorrentista + "\n";
+    }
 }
