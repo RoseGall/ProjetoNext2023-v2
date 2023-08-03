@@ -65,7 +65,7 @@ public class TelaConta {
             double percentualBonus = 0;
             System.out.print("Informe o percentual de bônus: ");
             percentualBonus = scanner.nextDouble();
-            ContaCorrente contaPoupanca = new ContaPoupanca(numero, saldo, nomeCorrentista, percentualBonus);
+            ContaPoupanca contaPoupanca = new ContaPoupanca(numero, saldo, nomeCorrentista, percentualBonus);
             String mensagem = mediatorContaCorrente.incluir(contaPoupanca);
 
             if (mensagem == null) {
