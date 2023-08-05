@@ -4,7 +4,6 @@ import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
 import br.edu.cesarschool.next.oo.entidade.ContaPoupanca;
 import br.edu.cesarschool.next.oo.negocio.MediatorContaCorrente;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
@@ -22,7 +21,7 @@ public class TelaConta {
 
         int opcao = 0;
         do {
-            System.out.println("1- Incluir conta");
+            System.out.println("\n1- Incluir conta");
             System.out.println("2- Creditar");
             System.out.println("3- Debitar");
             System.out.println("4- Buscar");
