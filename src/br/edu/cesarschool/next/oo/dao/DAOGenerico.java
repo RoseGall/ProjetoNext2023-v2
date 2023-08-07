@@ -46,7 +46,7 @@ public class DAOGenerico {
 
     public boolean excluir(RegistroIdentificavel reg) {
         RegistroIdentificavel regBusca = buscar(reg.obterChave());
-        if (regBusca != null) {
+        if (regBusca == null) {
             return false;
         } else {
             cadastro.excluir(reg.obterChave());

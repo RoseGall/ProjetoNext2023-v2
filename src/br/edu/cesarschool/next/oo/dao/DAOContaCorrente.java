@@ -2,6 +2,7 @@ package br.edu.cesarschool.next.oo.dao;
 
 import java.io.Serializable;
 import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
+import br.edu.cesarschool.next.oo.entidade.RegistroIdentificavel;
 import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 
 import javax.tools.JavaCompiler;
@@ -47,6 +48,12 @@ public class DAOContaCorrente {
             contas[i] = (ContaCorrente) rets[i];
         }
         return contas;
+    }
+
+    public boolean excluir(String numero) {
+
+        RegistroIdentificavel registroIdentificavel = daoGen.buscar(numero);
+        return daoGen.excluir(registroIdentificavel);
     }
 
 }

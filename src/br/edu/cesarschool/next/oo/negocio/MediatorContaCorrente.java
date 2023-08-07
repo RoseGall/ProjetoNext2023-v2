@@ -3,7 +3,9 @@ package br.edu.cesarschool.next.oo.negocio;
 import br.edu.cesarschool.next.oo.dao.DAOContaCorrente;
 import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
 import br.edu.cesarschool.next.oo.entidade.ContaPoupanca;
+import br.edu.cesarschool.next.oo.entidade.RegistroIdentificavel;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -33,12 +35,14 @@ public class MediatorContaCorrente {
             if (((ContaPoupanca) conta).getPercentualBonus() < 0) {
                 return "O percentual de bônus não pode ser menor que zero.";
             } else {
+                conta.setDataHoraCriacao(LocalDateTime.now());
                 boolean ret = daoContaCorrente.incluir(conta);
                 if (!ret) {
                     return "Conta já existente.";
                 }
             }
         } else {
+            conta.setDataHoraCriacao(LocalDateTime.now());
             boolean ret = daoContaCorrente.incluir(conta);
             if (!ret) {
                 return "Conta já existente.";
@@ -101,6 +105,17 @@ public class MediatorContaCorrente {
         List<ContaCorrente> listaContas = Arrays.asList(contas);
         listaContas.sort(new ComparadorContaCorrenteSaldo());
         return listaContas;
+    }
+
+    public String excluir(String numero) {
+
+        ContaCorrente conta = daoContaCorrente.buscar(numero);
+        if (conta == null) {
+            return "Conta inexistente.";
+        } else {
+            boolean excluir = daoContaCorrente.excluir(numero);
+            return null;
+        }
     }
 
     private boolean stringNulaOuVazia(String valor) {
