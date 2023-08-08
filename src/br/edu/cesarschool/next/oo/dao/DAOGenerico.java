@@ -1,7 +1,5 @@
 package br.edu.cesarschool.next.oo.dao;
 
-import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
-import br.edu.cesarschool.next.oo.entidade.Produto;
 import br.edu.cesarschool.next.oo.entidade.RegistroIdentificavel;
 import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 

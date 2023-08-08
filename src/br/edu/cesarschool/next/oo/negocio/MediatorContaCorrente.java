@@ -3,13 +3,10 @@ package br.edu.cesarschool.next.oo.negocio;
 import br.edu.cesarschool.next.oo.dao.DAOContaCorrente;
 import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
 import br.edu.cesarschool.next.oo.entidade.ContaPoupanca;
-import br.edu.cesarschool.next.oo.entidade.RegistroIdentificavel;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 public class MediatorContaCorrente {
 

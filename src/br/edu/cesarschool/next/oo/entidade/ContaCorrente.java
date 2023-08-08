@@ -1,7 +1,6 @@
 package br.edu.cesarschool.next.oo.entidade;
 
-import java.io.Serializable;
-public class ContaCorrente extends RegistroIdentificavel implements Serializable {
+public class ContaCorrente extends RegistroIdentificavel {
 
     private static final long serialVersionUID = 1L;
     private String numero;

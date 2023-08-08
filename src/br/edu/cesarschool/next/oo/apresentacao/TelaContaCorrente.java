@@ -2,7 +2,6 @@ package br.edu.cesarschool.next.oo.apresentacao;
 
 import br.edu.cesarschool.next.oo.entidade.ContaCorrente;
 import br.edu.cesarschool.next.oo.entidade.ContaPoupanca;
-import br.edu.cesarschool.next.oo.entidade.Produto;
 import br.edu.cesarschool.next.oo.negocio.MediatorContaCorrente;
 
 import java.time.format.DateTimeFormatter;
@@ -10,13 +9,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class TelaConta {
+public class TelaContaCorrente {
 
     private static final Scanner scanner = new Scanner(System.in);
 
     MediatorContaCorrente mediatorContaCorrente = new MediatorContaCorrente();
 
-    public TelaConta() {
+    public TelaContaCorrente() {
     }
 
     public void iniciarTela() {
